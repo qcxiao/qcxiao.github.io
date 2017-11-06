@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2F2017%2F11%2F04%2F%E3%80%90Python%E3%80%91%20%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[【Python】 第一章 基础语法 title: 基础语法date: 2017-11-06 22:45:42tags: [Python] categories: PythonPython与JAVA的差异比较 Python是解释型语言，Java是编译型语言； Python比Java的运行速度慢，但是实现相同功能的代码少； 根据语言强弱特性，Python是动态语言，Java是静态语言； 变量与数据类型 浮点数，可以使用科学记数法，0.000012可以写成1.2e-5 字符串，它是以””或’’括起来的任意文本 布尔值，True、False(注意大小写) 逻辑运算符，and、or、not 空值，None 注释，以 # 开头到后面的文字直到行尾都算注释 转义，通过\转义 raw字符串与多行字符串，r’…’表示一个raw字符串，里面的字符就不需要转义了，但是不能包含多行字符串和包含’、”的字符串；可以使用’’’…’’’表示多行字符串 对Unicode的支持，u’中文’，就可以正常显示中文，可以与r和’’’联合使用；如果中文字符串在Python环境下遇到 UnicodeDecodeError，这是因为.py文件保存的格式有问题，可以在第一行添加注释# -- coding: utf-8 --]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Anaconda使用]]></title>
     <url>%2F2017%2F10%2F31%2FAnaconda%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[功能介绍Anaconda是用于管理python版本切换的管理工具 提供了包管理功能， 提供环境管理的功能，功能类似 Virtualenv，解决了多版本Python并存、切换的问题。 python版本管理1234567891011121314151617# 查看帮助conda -h # 基于python3.6版本创建一个名字为python36的环境conda create --name python36 python=3.6 # 激活此环境activate python36 source activate python36 # linux/mac# 再来检查python版本，显示是 3.6python -V # 退出当前环境deactivate python36 # 删除该环境conda remove -n python36 --all# 或者 conda env remove -n python36# 查看所以安装的环境conda info -e conda的一些常用命令1234567891011121314151617181920# 查看当前环境下已安装的包conda list# 查看某个指定环境的已安装包conda list -n python34# 查找package信息conda search numpy# 安装packageconda install -n python34 numpy# 如果不用-n指定环境名称，则被安装在当前活跃环境# 也可以通过-c指定通过某个channel安装# 更新packageconda update -n python34 numpy# 删除packageconda remove -n python34 numpy# 更新conda，保持conda最新conda update conda# 更新anacondaconda update anaconda# 更新python，假设当前环境是python 3.4, conda会将python升级为3.4.x系列的当前最新版本conda update python 设置代理镜像123456789# 添加Anaconda的TUNA镜像conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/# TUNA的help中镜像地址加有引号，需要去掉# 设置搜索时显示通道地址conda config --set show_channel_urls yes# 移除某个Anaconda的TUNA镜像conda config --remove channels &apos;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/&apos;]]></content>
